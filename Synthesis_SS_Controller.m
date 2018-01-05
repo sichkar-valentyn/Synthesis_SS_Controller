@@ -1,6 +1,15 @@
+% File: Synthesis_SS_Controller.m
+% Description: Synthesis of SS Controller in Matlab using Simulink
+% Environment: Matlab
 %
+% MIT License
+% Copyright (c) 2017 Valentyn N Sichkar
+% github.com/sichkar-valentyn
+% Reference to:
+% [1] Valentyn N Sichkar. Synthesis of SS Controller in Matlab using Simulink // GitHub platform [Electronic resource]. URL: https://github.com/sichkar-valentyn/Synthesis_SS_Controller (date of access: XX.XX.XXXX)
+
 close all;
-% 1) Plant simulation
+% Plant simulation
 Kpc = 3; Tpc = 0.001;
 Ra = 10; Ta = 0.01; Ke = 0.05; Km = Ke;
 J = 0.5E-5; Kvs = 10/600;
@@ -17,7 +26,7 @@ figure(1); plot(t, y, '--k'); grid on; hold on;
            axis([0 Tend -0.1 1.2]);
            legend('y'); xlabel('t, c');
  
-% 2) Controller synthesis with place function
+% Controller synthesis with place function
 % P = [-100; -50+100i; -50-100i]; % 1 var
 % P = [-200; -100+100i; -100-100i]; % 2 var
 P = [-50; -50+50i; -50-50i]; % 3 var
@@ -27,12 +36,12 @@ Sys_closed = ss(Ax - Bu*KK, Bu, Cx, Du);
 Ksys = dcgain(Sys_closed);
 Kg = 1/Ksys;
 
-% 3) Simulation of closed-loop system 
+% Simulation of closed-loop system 
 [y_c, t] = step(Sys_closed, Tend); 
 figure(2); plot(t, Kg*y_c, 'k');
 legend('y', 'K_g*y_c');
 
-% 4) Simulation of the system using Simulink model 
+% Simulation of the system using Simulink model 
 System_without_Observer;
 Model = 'System_without_Observer';
 g = 1;
