@@ -3,7 +3,7 @@
 % Environment: Matlab
 %
 % MIT License
-% Copyright (c) 2017 Valentyn N Sichkar
+% Copyright (c) 2018 Valentyn N Sichkar
 % github.com/sichkar-valentyn
 % Reference to:
 % [1] Valentyn N Sichkar. Synthesis of SS Controller in Matlab using Simulink // GitHub platform [Electronic resource]. URL: https://github.com/sichkar-valentyn/Synthesis_SS_Controller (date of access: XX.XX.XXXX)
