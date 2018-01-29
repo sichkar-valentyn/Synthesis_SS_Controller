@@ -5,7 +5,11 @@ Synthesis of SS Controller in Matlab using Simulink
 [1] Valentyn N Sichkar. Synthesis of SS Controller in Matlab using Simulink // GitHub platform [Electronic resource]. URL: https://github.com/sichkar-valentyn/Synthesis_SS_Controller (date of access: XX.XX.XXXX)
 
 ## Description
-Synthesis of SS Controller in Matlab using Simulink
+Synthesis of SS Controller in Matlab using Simulink.
+<br/>1) Plant simulation.
+<br/>2) Controller synthesis with place function.
+<br/>3) Simulation of closed-loop system.
+<br/>4) Simulation of the system using Simulink model.
 
 ## Plant Simulation
 ![Results](images/Plant_Simulation.png)
