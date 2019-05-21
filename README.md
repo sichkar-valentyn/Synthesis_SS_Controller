@@ -1,6 +1,9 @@
 # Synthesis of SS Controller
 Synthesis of SS Controller in Matlab using Simulink
 
+### Courses:
+* Explore the course **"Convolutional Neural Networks for Image Classification"** here: https://stepik.org/course/53801/promo
+
 ### Reference to:
 [1] Valentyn N Sichkar. Synthesis of SS Controller in Matlab using Simulink // GitHub platform [Electronic resource]. URL: https://github.com/sichkar-valentyn/Synthesis_SS_Controller (date of access: XX.XX.XXXX)
 
